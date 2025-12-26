@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hero = ({title = 'Looking to be a Software Developer in 2025?', subtitle = 'Find a Role that fits your skillset'}) => {
+const Hero = ({title = 'Looking to be a Software Developer in 2026?', subtitle = 'Find a Role that fits your skillset'}) => {
   return (
 
     <>

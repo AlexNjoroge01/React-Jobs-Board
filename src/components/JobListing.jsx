@@ -6,7 +6,7 @@ import { FaMapMarker } from 'react-icons/fa'
 
 
 
-const JobListing = ({job}) => {
+const JobListing = ({ job, isEmployerMode = false }) => {
   const [showFullDescription, setShowFullDescription] = useState(false);
 
   let description = job.description;
@@ -41,9 +41,10 @@ const JobListing = ({job}) => {
                 </div>
                 <Link
                   to={`/jobs/${job.id}`}
+                  state={isEmployerMode ? { fromEmployer: true } : undefined}
                   className="h-[36px] bg-cyan-700 hover:bg-cyan-700 text-white px-4 py-2 rounded-lg text-center text-sm"
                 >
-                Read More
+                  {isEmployerMode ? 'Manage Job' : 'Read More'}
                 </Link>
               </div>
             </div>

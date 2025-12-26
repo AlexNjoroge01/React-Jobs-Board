@@ -17,7 +17,7 @@ const HomeCards = () => {
               Browse our React jobs and start your career today
             </p>
             <Link
-              to="/jobs.html"
+              to="/jobs"
               className="inline-block bg-black text-white rounded-lg px-4 py-2 hover:bg-gray-700"
               >
               Browse Jobs
@@ -30,12 +30,20 @@ const HomeCards = () => {
             <p className="mt-2 mb-4">
               List your job to find the perfect developer for the role
             </p>
-            <Link
-              to="/add-job"
-              className="inline-block bg-cyan-700 text-white rounded-lg px-4 py-2 hover:bg-cyan-700"
-            >
-              Add Job
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                to="/add-job"
+                className="inline-block bg-cyan-700 text-white rounded-lg px-4 py-2 hover:bg-cyan-700 text-center flex-1"
+              >
+                Add Job
+              </Link>
+              <Link
+                to="/manage-jobs"
+                className="inline-block bg-white text-cyan-700 border border-cyan-700 rounded-lg px-4 py-2 hover:bg-cyan-50 text-center flex-1"
+              >
+                Manage Jobs
+              </Link>
+            </div>
            </Card>
          </div>
       </div>

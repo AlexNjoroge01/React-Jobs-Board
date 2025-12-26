@@ -1,8 +1,9 @@
-import React from 'react'
-import {useParams, useLoaderData, useNavigate } from 'react-router-dom'
+import React, { useState } from 'react'
+import {useParams, useLoaderData, useNavigate, useLocation } from 'react-router-dom'
 import {FaArrowLeft, FaMapMarker} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import ApplicationModal from '../components/ApplicationModal';
 
 
 
@@ -10,6 +11,11 @@ const JobPage = ({deleteJob}) => {
   const navigate = useNavigate();
   const {id} = useParams();
   const job = useLoaderData();
+  const location = useLocation();
+  const [showApplicationModal, setShowApplicationModal] = useState(false);
+
+  // Check if user is in employer mode (came from add/edit job pages)
+  const isEmployerMode = location.state?.fromEmployer || false;
 
   const onDeleteClick = (jobId) => {
     const confirm = window.confirm('Are you sure you want to proceed with this action')
@@ -95,26 +101,54 @@ const JobPage = ({deleteJob}) => {
               <h3 className="text-xl">Contact Phone:</h3>
 
               <p className="my-2 bg-indigo-100 p-2 font-bold">{job.company.contactPhone}</p>
+
+              {/* Apply section for developers - only show if not in employer mode */}
+              {!isEmployerMode && (
+                <>
+                  <hr className="my-4" />
+                  <h3 className="text-xl font-bold mb-2">Apply for this job</h3>
+                  <p className="text-gray-600 mb-4">
+                    Fill out the application form to send your details directly to the hiring team.
+                  </p>
+                  <button
+                    onClick={() => setShowApplicationModal(true)}
+                    className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
+                  >
+                    Apply Now
+                  </button>
+                </>
+              )}
             </div>
 
-            {/* <!-- Manage --> */}
-            <div className="bg-white p-6 rounded-lg shadow-md mt-6">
-              <h3 className="text-xl font-bold mb-6">Manage Job</h3>
-              <Link
-                to={`/edit-job/${job.id}`}
-                className="bg-indigo-500 hover:bg-indigo-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
-                >Edit Job</Link
-              >
-              <button onClick={() => onDeleteClick(job.id)}
-                className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
-              >
-                Delete Job
-              </button>
-            </div>
+            {/* <!-- Manage Job - only show in employer mode --> */}
+            {isEmployerMode && (
+              <div className="bg-white p-6 rounded-lg shadow-md mt-6">
+                <h3 className="text-xl font-bold mb-6">Manage Job</h3>
+                <Link
+                  to={`/edit-job/${job.id}`}
+                  state={{ fromEmployer: true }}
+                  className="bg-indigo-500 hover:bg-indigo-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
+                  >Edit Job</Link
+                >
+                <button onClick={() => onDeleteClick(job.id)}
+                  className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
+                >
+                  Delete Job
+                </button>
+              </div>
+            )}
           </aside>
         </div>
       </div>
     </section>
+
+    {/* Application Modal */}
+    <ApplicationModal
+      isOpen={showApplicationModal}
+      onClose={() => setShowApplicationModal(false)}
+      job={job}
+      companyEmail={job.company.contactEmail}
+    />
     
     </>
   )
