@@ -11,10 +11,23 @@ export default async function handler(req, res) {
   }
 
   try {
+    // Check if environment variables are set (Upstash uses KV_REST_API_URL and KV_REST_API_TOKEN)
+    const redisUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL;
+    const redisToken = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
+    
+    if (!redisUrl || !redisToken) {
+      console.error('Missing Upstash Redis environment variables');
+      console.error('Looking for: KV_REST_API_URL, KV_REST_API_TOKEN, UPSTASH_REDIS_REST_URL, or UPSTASH_REDIS_REST_TOKEN');
+      return res.status(500).json({ 
+        message: 'Server configuration error', 
+        error: 'Redis environment variables not configured. Need KV_REST_API_URL and KV_REST_API_TOKEN' 
+      });
+    }
+
     // Initialize Redis client
     const redis = new Redis({
-      url: process.env.UPSTASH_REDIS_REST_URL,
-      token: process.env.UPSTASH_REDIS_REST_TOKEN,
+      url: redisUrl,
+      token: redisToken,
     });
 
     if (req.method === 'GET') {
