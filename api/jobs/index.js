@@ -21,8 +21,8 @@ export default async function handler(req, res) {
       // Get all jobs
       let jobs = await redis.get('jobs');
       
-      // If no jobs exist, initialize with default data
-      if (!jobs || jobs.length === 0) {
+      // Ensure jobs is an array (handle null or non-array responses)
+      if (!jobs || !Array.isArray(jobs) || jobs.length === 0) {
         jobs = [
           {
             id: "1",
@@ -112,6 +112,11 @@ export default async function handler(req, res) {
         await redis.set('jobs', jobs);
       }
 
+      // Ensure jobs is always an array before returning
+      if (!Array.isArray(jobs)) {
+        jobs = [];
+      }
+
       // Handle _limit query parameter (for home page showing 3 jobs)
       const limit = req.query._limit;
       if (limit) {
@@ -127,7 +132,12 @@ export default async function handler(req, res) {
       const newJob = req.body;
       
       // Get existing jobs
-      let jobs = await redis.get('jobs') || [];
+      let jobs = await redis.get('jobs');
+      
+      // Ensure jobs is an array
+      if (!jobs || !Array.isArray(jobs)) {
+        jobs = [];
+      }
       
       // Generate new ID (simple increment, you could use UUID if preferred)
       const maxId = jobs.length > 0 

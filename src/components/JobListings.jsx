@@ -13,11 +13,19 @@ const JobListings = ({isHome = false}) => {
       const apiUrl = isHome ? '/api/jobs?_limit=3' : '/api/jobs'
       try {
         const res = await fetch(apiUrl);
-      const data =  await  res.json();
-      setJobs(data);
+        const data = await res.json();
+        
+        // Ensure data is an array
+        if (Array.isArray(data)) {
+          setJobs(data);
+        } else {
+          console.error('API returned non-array data:', data);
+          setJobs([]);
+        }
 
       } catch (error) {
         console.log('Error fetching Data', error);
+        setJobs([]);
       } finally  {
         setLoading(false);
       }

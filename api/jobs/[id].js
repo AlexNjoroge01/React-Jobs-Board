@@ -20,7 +20,12 @@ export default async function handler(req, res) {
     });
     
     // Get all jobs
-    let jobs = await redis.get('jobs') || [];
+    let jobs = await redis.get('jobs');
+    
+    // Ensure jobs is an array
+    if (!jobs || !Array.isArray(jobs)) {
+      jobs = [];
+    }
     
     if (req.method === 'GET') {
       // Get single job by ID
