@@ -1,6 +1,6 @@
 import {NavLink} from 'react-router-dom'
 import React from 'react'
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/logo.jpg'
 
 const Navbar = () => {
 
@@ -17,7 +17,7 @@ const Navbar = () => {
             {/* <!-- Logo --> */}
             <NavLink className="flex flex-shrink-0 items-center mr-4" to="/">
               <img
-                className="h-10 w-auto"
+                className="h-10 border border-cyan-700 rounded-xl  w-auto"
                 src={logo}
                 alt="React Jobs"
               />

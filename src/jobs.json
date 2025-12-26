@@ -2,87 +2,229 @@
   "jobs": [
     {
       "id": "1",
-      "title": "Senior React Developer",
+      "title": "Senior Python Developer (Django/FastAPI)",
       "type": "Full-Time",
-      "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as React or Angular.",
-      "location": "Boston, MA",
-      "salary": "$70K - $80K",
+      "description": "Africas Talking is looking for a Senior Python Developer to build scalable backend APIs and microservices. You will work with Django and FastAPI to develop payment processing systems, SMS gateways, and developer tools used by thousands of businesses across Africa.",
+      "location": "Nairobi, Kenya",
+      "salary": "KSh 280,000 - 350,000",
       "company": {
-        "name": "NewTek Solutions",
-        "description": "NewTek Solutions is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.",
-        "contactEmail": "contact@teksolutions.com",
-        "contactPhone": "555-555-5555"
+        "name": "Africas Talking",
+        "description": "Africas Talking is a leading African communications platform as a service (CPaaS) provider, powering SMS, voice, airtime and payments for startups and enterprises across the continent.",
+        "contactEmail": "careers@africastalking.com",
+        "contactPhone": "+254 700 000001"
       }
     },
     {
       "id": "2",
-      "title": "Front-End Engineer (React & Redux)",
+      "title": "Go Backend Engineer",
       "type": "Full-Time",
-      "location": "Miami, FL",
-      "description": "Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
-      "salary": "$70K - $80K",
+      "location": "Nairobi, Kenya",
+      "description": "Safaricom is hiring a Go Backend Engineer to build high-performance microservices for our M-Pesa platform. You will work on distributed systems handling millions of transactions daily, focusing on concurrency, performance optimization and system reliability.",
+      "salary": "KSh 300,000 - 380,000",
       "company": {
-        "name": "Veneer Solutions",
-        "description": "Veneer Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
-        "contactEmail": "contact@loremipsum.com",
-        "contactPhone": "555-555-5555"
+        "name": "Safaricom PLC",
+        "description": "Safaricom is Kenya's leading telecommunications company, innovating in mobile, financial and digital services to improve lives and drive economic growth.",
+        "contactEmail": "techcareers@safaricom.co.ke",
+        "contactPhone": "+254 722 000002"
       }
     },
     {
       "id": "3",
-      "title": "React.js Dev",
+      "title": "Solana Blockchain Developer",
       "type": "Full-Time",
-      "location": "Brooklyn, NY",
-      "description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensation and a collaborative work environment where your ideas are valued.",
-      "salary": "$70K - $80K",
+      "location": "Nairobi, Kenya",
+      "description": "A leading Kenyan fintech startup is seeking a Solana Blockchain Developer to build DeFi applications and smart contracts. You will work on tokenization projects, NFT marketplaces, and cross-chain integrations using Rust and Solana Web3.js.",
+      "salary": "KSh 350,000 - 450,000",
       "company": {
-        "name": "Dolor Cloud",
-        "description": "Dolor Cloud is a leading technology company specializing in digital solutions for businesses of all sizes. With a focus on innovation and customer satisfaction, we are committed to delivering cutting-edge products and services.",
-        "contactEmail": "contact@dolorsitamet.com",
-        "contactPhone": "555-555-5555"
+        "name": "Kenya Web3 Labs",
+        "description": "Kenya Web3 Labs is an innovative blockchain technology company building decentralized financial solutions and Web3 infrastructure for the African market.",
+        "contactEmail": "careers@kenyaweb3.com",
+        "contactPhone": "+254 733 000003"
       }
     },
     {
       "id": "4",
-      "title": "React Front-End Developer",
-      "type": "Part-Time",
-      "description": "Join our team as a Part-Time Front-End Developer in beautiful Pheonix, AZ. We are looking for a self-motivated individual with a passion for creating engaging user experiences. This position offers flexible hours and the opportunity to work remotely.",
-      "location": "Pheonix, AZ",
-      "salary": "$60K - $70K",
+      "title": "Java Spring Boot Developer",
+      "type": "Full-Time",
+      "description": "Equity Bank is recruiting a Java Spring Boot Developer to build enterprise banking applications and REST APIs. You will work on core banking systems, payment processing, and integration with third-party services using Spring Framework and microservices architecture.",
+      "location": "Nairobi, Kenya",
+      "salary": "KSh 320,000 - 400,000",
       "company": {
-        "name": "Alpha Elite",
-        "description": "Alpha Elite is a dynamic startup specializing in digital marketing and web development. We are committed to fostering a diverse and inclusive workplace where creativity and innovation thrive.",
-        "contactEmail": "contact@adipisicingelit.com",
-        "contactPhone": "555-555-5555"
+        "name": "Equity Bank Kenya",
+        "description": "Equity Bank is one of East Africa's largest banks, focused on inclusive financial services and digital banking innovation.",
+        "contactEmail": "digitalcareers@equitybank.co.ke",
+        "contactPhone": "+254 763 000004"
       }
     },
     {
       "id": "5",
-      "title": "Full Stack React Developer",
+      "title": "Rust Systems Developer",
       "type": "Full-Time",
-      "description": "Exciting opportunity for a Full-Time Front-End Developer in bustling Atlanta, GA. We are seeking a talented individual with a passion for building elegant and scalable web applications. Join our team and make an impact!",
-      "location": "Atlanta, GA",
-      "salary": "$90K - $100K",
+      "description": "A Kenyan fintech company is seeking a Rust Systems Developer to build high-performance payment processing engines and blockchain infrastructure. You will work on memory-safe, concurrent systems handling high transaction volumes with minimal latency.",
+      "location": "Nairobi, Kenya",
+      "salary": "KSh 380,000 - 480,000",
       "company": {
-        "name": "Browning Technologies",
-        "description": "Browning Technologies is a rapidly growing technology company specializing in e-commerce solutions. We offer a dynamic and collaborative work environment where employees are encouraged to think creatively and innovate.",
-        "contactEmail": "contact@consecteturadipisicing.com",
-        "contactPhone": "555-555-5555"
+        "name": "FinTech Innovations Kenya",
+        "description": "FinTech Innovations Kenya is a cutting-edge financial technology company building next-generation payment systems and blockchain solutions for African markets.",
+        "contactEmail": "engineering@fintechinnovations.co.ke",
+        "contactPhone": "+254 711 000005"
       }
     },
     {
       "id": "6",
-      "title": "React Native Developer",
+      "title": "React Frontend Developer",
       "type": "Full-Time",
-      "location": "Portland, OR",
-      "description": "Join our team as a Front-End Developer in beautiful Portland, OR. We are looking for a skilled and enthusiastic individual to help us create innovative web solutions. Competitive salary and great benefits package available.",
-      "salary": "$100K - $110K",
+      "location": "Nairobi, Kenya",
+      "description": "Twiga Foods is looking for a React Developer to build internal dashboards and logistics tools that support our fresh produce supply chain. You will turn complex workflows into simple, performant interfaces for our operations teams.",
+      "salary": "KSh 220,000 - 280,000",
       "company": {
-        "name": "Port Solutions INC",
-        "description": "Port Solutions is a leading technology company specializing in software development and digital marketing. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
-        "contactEmail": "contact@ipsumlorem.com",
-        "contactPhone": "555-555-5555"
+        "name": "Twiga Foods",
+        "description": "Twiga Foods is a fast-growing Kenyan agritech startup connecting farmers, vendors and retailers through a technology-enabled supply chain.",
+        "contactEmail": "engineering@twiga.com",
+        "contactPhone": "+254 733 000006"
+      }
+    },
+    {
+      "id": "7",
+      "title": "Python Data Scientist",
+      "type": "Full-Time",
+      "location": "Nairobi, Kenya",
+      "description": "M-Pesa is seeking a Python Data Scientist to build machine learning models for fraud detection, credit scoring, and customer behavior analysis. You will work with pandas, scikit-learn, TensorFlow and large-scale data processing pipelines.",
+      "salary": "KSh 300,000 - 380,000",
+      "company": {
+        "name": "M-Pesa Africa",
+        "description": "M-Pesa is Africa's leading mobile money platform, enabling millions of people to send money, pay bills and access financial services through their mobile phones.",
+        "contactEmail": "techjobs@mpesa.com",
+        "contactPhone": "+254 722 000007"
+      }
+    },
+    {
+      "id": "8",
+      "title": "Node.js Backend Developer",
+      "type": "Full-Time",
+      "location": "Nairobi, Kenya",
+      "description": "Cellulant is hiring a Node.js Backend Developer to build scalable payment APIs and merchant management systems. You will work with Express.js, TypeScript, and microservices architecture to integrate payment gateways across multiple African markets.",
+      "salary": "KSh 260,000 - 330,000",
+      "company": {
+        "name": "Cellulant",
+        "description": "Cellulant is a leading African fintech company providing payment solutions that connect merchants, banks and mobile money operators across the continent.",
+        "contactEmail": "careers@cellulant.com",
+        "contactPhone": "+254 700 000008"
+      }
+    },
+    {
+      "id": "9",
+      "title": "Android Developer (Kotlin/Java)",
+      "type": "Full-Time",
+      "location": "Nairobi, Kenya",
+      "description": "KCB Bank is looking for an Android Developer to build and maintain our mobile banking app. You will work with Kotlin, Java, and modern Android architecture components to deliver secure, user-friendly banking experiences for millions of customers.",
+      "salary": "KSh 270,000 - 340,000",
+      "company": {
+        "name": "KCB Bank Kenya",
+        "description": "KCB Bank is one of Kenya's largest commercial banks, providing innovative banking solutions and digital financial services to millions of customers.",
+        "contactEmail": "digitaljobs@kcb.co.ke",
+        "contactPhone": "+254 711 000009"
+      }
+    },
+    {
+      "id": "10",
+      "title": "Vue.js Frontend Developer",
+      "type": "Full-Time",
+      "location": "Nairobi, Kenya",
+      "description": "Andela is recruiting a Vue.js Frontend Developer to build modern web applications for global clients. You'll work with Vue 3, TypeScript, Pinia, and collaborate with distributed teams to deliver scalable frontend solutions.",
+      "salary": "KSh 240,000 - 300,000",
+      "company": {
+        "name": "Andela",
+        "description": "Andela is a global talent network that connects African software developers with leading technology companies worldwide, fostering remote collaboration and career growth.",
+        "contactEmail": "engineering@andela.com",
+        "contactPhone": "+254 733 000010"
+      }
+    },
+    {
+      "id": "11",
+      "title": "Flutter Mobile Developer",
+      "type": "Full-Time",
+      "location": "Nairobi, Kenya",
+      "description": "Sendy is seeking a Flutter Mobile Developer to build cross-platform mobile apps for our logistics platform. You'll create apps for drivers, merchants, and customers using Dart, Firebase, and modern mobile architecture patterns.",
+      "salary": "KSh 250,000 - 310,000",
+      "company": {
+        "name": "Sendy Limited",
+        "description": "Sendy is a Kenyan logistics and fulfillment startup making it easier for businesses and individuals to move packages and freight across East Africa.",
+        "contactEmail": "careers@sendy.co.ke",
+        "contactPhone": "+254 701 000011"
+      }
+    },
+    {
+      "id": "12",
+      "title": "DevOps Engineer (Docker/Kubernetes)",
+      "type": "Full-Time",
+      "location": "Remote within Kenya",
+      "description": "A leading Kenyan tech company is looking for a DevOps Engineer to manage cloud infrastructure, CI/CD pipelines, and containerized deployments. You will work with AWS, Docker, Kubernetes, Terraform, and monitoring tools to ensure high availability and scalability.",
+      "salary": "KSh 320,000 - 400,000",
+      "company": {
+        "name": "CloudTech Solutions Kenya",
+        "description": "CloudTech Solutions Kenya provides cloud infrastructure and DevOps services to startups and enterprises across East Africa, helping them scale efficiently.",
+        "contactEmail": "careers@cloudtech.co.ke",
+        "contactPhone": "+254 722 000012"
+      }
+    },
+    {
+      "id": "13",
+      "title": "Angular Frontend Developer",
+      "type": "Full-Time",
+      "location": "Nairobi, Kenya",
+      "description": "Jumia Kenya is hiring an Angular Frontend Developer to work on our e-commerce platform. You'll build features for product management, seller dashboards, and admin panels using Angular, TypeScript, RxJS, and modern frontend patterns.",
+      "salary": "KSh 260,000 - 330,000",
+      "company": {
+        "name": "Jumia Kenya",
+        "description": "Jumia is Africa's leading e-commerce platform, connecting millions of customers with sellers across Kenya and the continent.",
+        "contactEmail": "careers.ke@jumia.com",
+        "contactPhone": "+254 700 000013"
+      }
+    },
+    {
+      "id": "14",
+      "title": "Python Flask Developer",
+      "type": "Part-Time",
+      "location": "Remote within Kenya",
+      "description": "A Kenyan startup is seeking a Part-Time Python Flask Developer to build REST APIs and backend services. This role offers flexible hours and the opportunity to work on innovative fintech and agritech solutions.",
+      "salary": "KSh 150,000 - 200,000",
+      "company": {
+        "name": "StartupHub Kenya",
+        "description": "StartupHub Kenya is an incubator and technology services provider supporting early-stage startups with development resources and technical expertise.",
+        "contactEmail": "dev@startuphub.co.ke",
+        "contactPhone": "+254 711 000014"
+      }
+    },
+    {
+      "id": "15",
+      "title": "Full Stack TypeScript Developer",
+      "type": "Full-Time",
+      "location": "Nairobi, Kenya",
+      "description": "Tala is recruiting a Full Stack TypeScript Developer to work on both frontend (React) and backend (Node.js/NestJS) systems for our credit platform. You'll build end-to-end features including APIs, user interfaces, and data processing pipelines.",
+      "salary": "KSh 300,000 - 380,000",
+      "company": {
+        "name": "Tala",
+        "description": "Tala is a global fintech company providing instant credit and financial services to underserved populations through mobile technology and alternative credit scoring.",
+        "contactEmail": "careers@tala.co",
+        "contactPhone": "+254 733 000015"
+      }
+    },
+    {
+      "id": "16",
+      "title": "Swift iOS Developer",
+      "type": "Full-Time",
+      "location": "Nairobi, Kenya",
+      "description": "Branch is seeking a Swift iOS Developer to build and maintain our financial services iOS app. You'll work with SwiftUI, Combine, Core Data, and modern iOS architecture to deliver secure, performant mobile banking experiences.",
+      "salary": "KSh 280,000 - 350,000",
+      "company": {
+        "name": "Branch International",
+        "description": "Branch is a mobile-first financial services platform providing instant loans and financial products to underserved customers across Africa and emerging markets.",
+        "contactEmail": "engineering@branch.co",
+        "contactPhone": "+254 711 000016"
       }
     }
   ]
 }
+
+
