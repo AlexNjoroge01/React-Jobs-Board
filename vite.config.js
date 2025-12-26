@@ -7,7 +7,10 @@ export default defineConfig({
   server: {
     port: 3000,
 
-    //adding a proxy so when we deploy the backend api localhost can still work
+    // Proxy for local JSON Server development (optional)
+    // On Vercel, /api routes automatically use serverless functions
+    // For local dev with Vercel functions: run 'vercel dev' instead
+    // To use JSON Server locally: run 'npm run server' and keep this proxy
     proxy: {
       '/api':{
         target:'http://localhost:8000',
